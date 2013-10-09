@@ -1,0 +1,141 @@
+<head>
+  <title>Chat!</title>
+  <link type="text/css" rel="stylesheet" href="main.css"/>
+  <style type="text/css">
+
+  #container {
+    overflow-y: hidden;
+  }
+
+  #chatlog {
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+
+  #chatcontainer{
+    height: 45%;
+    overflow-y: scroll;
+  }
+
+  #chatlog .user1 {
+    background-color: white;
+    vertical-align: top;
+    font-weight: bold;
+    color: #0F808E;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #chatlog .user2 {
+    background-color: #AEE239;
+    vertical-align: top;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: darkred;
+  }
+
+  #chatlog .message1 {
+    background-color: white;
+    vertical-align: top;
+    padding-right:20px;
+  }
+
+  #chatlog .message2 {
+    vertical-align: top;
+    padding-right:20px;
+  }
+
+  #typeChat {
+    border-top: 1px red solid;
+  }
+
+  .otherFriends {
+    position: absolute;
+    left: 75%;
+    top: 20%;
+    height: 48%;
+    width: 70;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #CADBA4;
+    border: 4px white double;
+    overflow-y: scroll;
+  }
+
+  .otherFriends img {
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin-bottom: 10px;
+    border: 1px green solid;
+    opacity: 0.25;
+    transition: 1s;
+  }
+
+  img:hover{
+    opacity: 1;
+    transition: 1s;
+  }
+
+  </style>
+</head>
+
+<div id="content">
+  <div id="header"><h1>Chat</h1></div>
+<div id="container">
+<!-- Chat log  -->
+<h2>Chat with Cookies</h2>
+<div id = "chatLog" class="lists"> 
+  <div id = "chatcontainer">
+  <table id = "chat">
+    <tr>
+      <td class = "user1">Cookies:</td>
+      <td class = "message1">Yo diggety dawg what's going on in tha hurr?</td>
+    </tr>
+    <tr>
+      <td class = "user2">Carrots:</td>
+      <td class = "message2">Nothing much, I see you like Cookies?!</td>
+    </tr>
+    <tr>
+      <td class = "user1">Cookies:</td>
+      <td class = "message1">Of course! Especially sour cream and onion. I regret to say that I'm not a huge fan of carrots, but I do like celery!</td>
+    </tr>
+    <tr>
+      <td class = "user2">Carrots:</td>
+      <td class = "message2">Oh.. that's unfortunate! But it's cool, I totally understand. By the way do you watch Supernatural? I'm sooo excited for its premiere in 30 minutes!</td>
+    </tr>
+    <tr>
+      <td class = "user1">Cookies:</td>
+      <td class = "message1">OMG I do!!! Jensen Ackles is one good looking dude..!</td>
+    </tr>
+    <tr>
+      <td class = "user2">Carrots:</td>
+      <td class = "message2">ALJNFOGWJGNVAL I KNOW RIGHT????</td>
+    </tr>
+  </table>
+  </div>
+
+<!-- Where you enter your chat -->
+<div id = "typeChat">
+  <input type ="Text" style="width:70%; float:left"></form>
+  <button type = "chatButton"> Send it! </button>  
+</div>
+
+</div>
+
+<!-- Other friends online/offline that you can chat/message -->
+
+<div class = "otherFriends">
+    <img src = "http://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/120px-001Bulbasaur.png"/>
+    <img src = "http://www.hasslefreeclipart.com/clipart_food/vegetables/asparagus.gif"/>
+    <img src = "http://img-cache.cdn.gaiaonline.com/f0465d24685b1182c5e4cb9bc06e3a1a/http://i479.photobucket.com/albums/rr153/TheSilverGriffin/SMG_BlueLuma.jpg"/> 
+    <img src = "http://cdn.bulbagarden.net/upload/thumb/2/21/001Bulbasaur.png/120px-001Bulbasaur.png"/>
+    <img src = "http://www.hasslefreeclipart.com/clipart_food/vegetables/asparagus.gif"/>
+    <img src = "http://img-cache.cdn.gaiaonline.com/f0465d24685b1182c5e4cb9bc06e3a1a/http://i479.photobucket.com/albums/rr153/TheSilverGriffin/SMG_BlueLuma.jpg"/> 
+
+</div>
+
+</div>
+</div>
