@@ -5,10 +5,7 @@ your shared tags, and the third column is a button so you can initiate a chat.--
   <title>Friends</title>
   <link type="text/css" rel = "stylesheet" href = "main.css"/>
   <style type="text/css">
-/*  td {
-    border: 1px black solid;
-  }
-*/  .chat_button img{
+  .chat_button img{
       height:20px;
       width:20px;
   }
@@ -20,9 +17,14 @@ your shared tags, and the third column is a button so you can initiate a chat.--
   }
   .name {
     background-color: white;
+    font-weight: bold;
   }
   .sharedTags{
     background-color: #F9F2E7;
+  }
+  #friendList{
+    height: 45%;
+    overflow-y: scroll;
   }
 
   </style>
@@ -35,12 +37,13 @@ your shared tags, and the third column is a button so you can initiate a chat.--
   <h2>Cookie's Friends</h2>
     <div id="friendList" class="lists">
       <table>
-        <thead>
+
           <tr>
             <td class="name">Carrots</td>
-            <td class="sharedTags">hiking, pastries, Jensen Ackles</td>
+            <td class="sharedTags">hiking, pastries, Jensen Ackles, food, llamas, tacos, <em>Frindle</em>, sweatshirts, Gwen Stefani, guacamole, sundresses, sprinkles, grapes, Paris, unicorns</td>
             <td>
-              <button type="button", class="chat_button"><img src="http://alexandersquestions.com/createcover/assets/images/bubble2_thumb.png"></button>
+              <button type="button", class="chat_button"> <a href = "chat.html"><img src="http://alexandersquestions.com/createcover/assets/images/bubble2_thumb.png"></a>
+              </button>
             </td>
           </tr>
           <tr>
@@ -56,9 +59,29 @@ your shared tags, and the third column is a button so you can initiate a chat.--
             <td>
                <button type="button", class="chat_button"><img src="http://alexandersquestions.com/createcover/assets/images/bubble2_thumb.png"></button>
             </td>
+            <tr>
+              <td class="name"><a href = "profile.html">Pringles</a></td>
+              <td class="sharedTags">chips, Naked juice, Starburst, Pokemon, T-shirts</td>
+              <td>
+               <button type="button", class="chat_button"><img src="http://alexandersquestions.com/createcover/assets/images/bubble2_thumb.png"></button>
+            </td>
+           <tr>
+              <td class="name">Pretzles</td>
+              <td class="sharedTags">running, backpacks, cardigans, manicures, dogs</td>
+              <td>
+               <button type="button", class="chat_button"><img src="http://alexandersquestions.com/createcover/assets/images/bubble2_thumb.png"></button>
+            </td>
+           <tr>
+              <td class="name">Grapes</td>
+              <td class="sharedTags">cake, noodles, hats</td>
+              <td>
+               <button type="button", class="chat_button"><img src="http://alexandersquestions.com/createcover/assets/images/bubble2_thumb.png"></button>
+            </td>
+
           </tr>
       </table>
-      <div class="add_friend">
+
+    <div class="add_friend">
       <!-- Textbox so you can search for friends to add -->
       <form>
         Search for Friend: <input type="text" name="Friend"> 
@@ -66,6 +89,6 @@ your shared tags, and the third column is a button so you can initiate a chat.--
       </form>
     </div>
 
-    </div>
+  </div>
   </div>
 </body>
