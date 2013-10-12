@@ -1,4 +1,4 @@
-#profilepic img
+#profilepic > img
 {
 	position: relative;
 	left:5%;
@@ -20,8 +20,14 @@
 	height: 25px;
 }
 
+#container{
+	overflow-y:hidden;
+}
 
-
+.lists {
+	overflow-y: scroll;
+	height: 200px;
+}
 
 
 

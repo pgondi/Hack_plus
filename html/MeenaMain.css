@@ -1,0 +1,138 @@
+
+body { /*Try not to put stuff directly in the body*/
+  background-color: #AEE239;
+  font: sans-serif;
+}
+
+#content { /*This is the white box that fills up most of the screen.*/
+  position: absolute;
+  top: 0%;
+  left: 3%;
+  bottom:3%;
+  right: 3%;
+  background-color: #F9F2E7;
+  border-radius: 10%;
+  -moz-border-radius: 10%;
+  opacity: 0.8;
+  transition: 1s;
+}
+
+#content:hover {
+  opacity: 1.0;
+  transition: 1s;
+  border-radius: 5%;
+}
+
+#container { /*This is the part that scrolls! Don't put your main header in here.*/
+  height: 80%;
+  width: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 3%;
+}
+
+#header { /*Put main header in here. Don't put #header inside container*/
+  padding-left: 5%;
+  font: small-caps xx-large sans-serif;
+  color: #40C0CB;
+  border-bottom: 3px #40C0CB dotted;
+  transition: 1.5s;
+  position: absolute;
+  width: auto;
+  top: 2%;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+}
+
+#header:hover {
+  background-color: #9AF0E9;
+  transition: 1.5s;
+  letter-spacing: 5px;
+}
+
+h2 { /*These are the aqua headers that hover and turn red*/
+  font: small-caps 2em sans-serif;
+  color: white;
+  background-color: #40C0CB;
+  margin-right: 30%;
+  border-right: 10px #F9F2E7 double;
+  border-bottom: 3px #F9F2E7 double;
+  transition: 1.5s;
+  padding-left: 4%;
+}
+
+h2:hover {
+  margin-right: 20%;
+  background-color: red;
+  transition: 1.5s;
+  letter-spacing: 5px;
+}
+
+.lists { /*I don't know why I called it lists, because they're not always lists.
+        Makes a green background with sidebar that turns red on hover.
+        For subsections/paragraphs/and things like that*/
+  background-color: #CADBA4;
+  margin-right: 30%;
+  margin-left: 3em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-left: 5px #40C0CB solid;
+  transition: 1.5s;
+  font-family: sans-serif;
+  color: #44424A;
+}
+
+.lists:hover {
+  transition: 1.5s;
+  border-color: red;
+}
+
+/*NAVBAR ELEMENTS*/
+#heading {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  background: rgb(122,188,255); /* Old browsers */
+background: -moz-linear-gradient(left, rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(122,188,255,1)), color-stop(44%,rgba(96,171,248,1)), color-stop(100%,rgba(64,150,238,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* IE10+ */
+background: linear-gradient(to right, rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=1 ); /* IE6-9 */
+  z-index: 1;
+  border-radius:5px;
+}
+
+#heading h1 {
+  display: inline;
+  font-family: sans-serif;
+}
+
+#heading ul {
+  display: inline;
+}
+
+#heading li {
+  display: inline;
+  margin-right: 30px;
+}
+
+#heading li a{
+  text-decoration:none;
+  color:black;
+}
+
+#searchbar {
+  display: inline;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+}
