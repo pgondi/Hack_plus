@@ -94,6 +94,7 @@ h2:hover {
   left: 0%;
   width: 100%;
   background-color: green;
+  z-index: 1;
 }
 
 #heading h1 {
